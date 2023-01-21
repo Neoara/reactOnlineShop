@@ -1,0 +1,274 @@
+body {
+    margin: 0px;
+    background-color:dodgerblue;
+}
+
+/* Header block */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 5px solid white;
+    height: 83px;
+    min-width: 600px;
+}
+
+.logo{
+    width: 50px;
+}
+
+.logoTextBlock{
+    width: 200px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.logoText{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: start; 
+    color: #fff;
+    width: 100px;
+}
+
+.routesBlock{
+    min-height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+a:link {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: darkcyan;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.ava {
+    width: 50px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 30%;
+}
+
+.ava2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0px;
+}
+
+.btn {
+    border: none;
+    background: darkblue;
+    padding: 5px;
+    color: white;
+    transition: 0.3s;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 4px;
+    width: 100px;
+}
+
+.alert {
+    animation: ar 0.5s;
+}
+
+/* Home Page */
+
+.mainBlock{
+    display: flex;
+}
+
+.cardBlock{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.cardBlocks{
+    width: 574px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 400px;
+    height: 800px;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: darkblue;
+    overflow: hidden;
+}
+
+.cardImg{
+    width: 100%;
+    height: 410px;
+    background-color: white;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: transform 500ms ease;
+}
+
+.cardImg:hover{
+    transform: scale(1.05);
+}
+
+.cardTitle{
+    width: 350px;
+    font-size: 24px;
+    color: white;
+    text-overflow: clip;
+}
+
+.cardPriceBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    font-size: 24px;
+    color: white;
+}
+.cardPrice{
+    width: 50%;
+}
+
+.cardPriceNum{
+    font-weight: bold;
+    color: greenyellow;
+}
+
+.cardRaitingNum{
+    font-weight: bold;
+    color: firebrick;
+}
+
+.cardText{
+    width: 350px;
+    height: 180px;
+    font-size: 24px;
+    color: white;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.cardBtn{
+    width: 350px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardBtn button{
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    border: 0;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.loading{
+    width: 100%;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    height: 100%;
+}
+
+/* Media */ 
+
+@media screen and (max-width: 768px) {
+    .cardBlock{
+        justify-content: center;
+    }
+
+    .cardBlocks{
+        width: 50%;
+    }
+
+    .card{
+        width: 300px;
+        height: 800px;
+    }
+
+    .cardTitle{
+        width: 250px;
+        font-size: 20px;
+    }
+
+    .cardPriceBlock{
+        width: 250px;
+        font-size: 20px;
+    }
+
+    .cardText{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cardBlock{
+        justify-content: center;
+        width: 600px;
+    }
+
+    .cardBlocks{
+        width: 600px;
+        border: 1px solid black;
+    }
+
+     .card{
+        width: 400px;
+        height: 800px;
+    }
+
+    .cardTitle{
+        width: 350px;
+        font-size: 24px;
+    }
+
+    .cardPriceBlock{
+        width: 350px;
+        font-size: 24px;
+    }
+
+    .cardText{
+        width: 350px;
+    }
+}
